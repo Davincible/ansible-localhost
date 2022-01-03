@@ -1,0 +1,11 @@
+---
+
+# - name: Install Base Packages
+#   community.general.pacman:
+#     name: neofetch
+#     state: present
+
+- name: Install Shell Packages
+  package:
+    name: "{{ base_pacman_packages }}"
+    state: present

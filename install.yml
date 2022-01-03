@@ -1,0 +1,8 @@
+---
+
+- name: Install base config
+  hosts: localhost
+  roles:
+    - base
+  tags:
+    - shell_config

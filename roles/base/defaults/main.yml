@@ -1,0 +1,22 @@
+---
+
+base_pacman_packages:
+  - yay
+  - base-devel
+  - zsh
+  - manjaro-zsh-config
+  - iw
+  - iwd
+  - dhcpcd
+  - file
+  - libyaml
+  - linux-firmware
+  - strace
+  - traceroute
+  - curl
+  - wget
+  - which
+  - wireguard-tools
+  - xclip
+  - zstd
+  - solid
