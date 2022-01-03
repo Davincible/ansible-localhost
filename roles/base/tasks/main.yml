@@ -1,4 +1,6 @@
-- include: install.yml
+---
+
+- include_tasks: install.yml
   become_method: sudo
   become: true
   become_user: root

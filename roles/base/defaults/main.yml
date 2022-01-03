@@ -20,3 +20,5 @@ base_pacman_packages:
   - xclip
   - zstd
   - solid
+  - sshpass
+  - net-tools
