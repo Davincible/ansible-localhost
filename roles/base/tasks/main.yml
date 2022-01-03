@@ -1,7 +1,6 @@
 ---
 
 - include_tasks: install.yml
-  become: true
     #   vars:
     #     ansible_password: "{{ primary_passwd }}"
     #     ansible_become_password: "{{ primary_passwd }}"
