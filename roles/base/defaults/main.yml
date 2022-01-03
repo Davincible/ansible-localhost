@@ -22,3 +22,11 @@ base_pacman_packages:
   - solid
   - sshpass
   - net-tools
+
+base_yay_packages:
+  - oh-my-zsh-git
+  - zsh-vi-mode
+  - nerd-fonts-roboto-mono
+  - nerd-fonts-noto-sans-mono
+  - nerd-fonts-source-code-pro
+  - noto-fonts

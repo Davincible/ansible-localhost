@@ -5,7 +5,12 @@
 #     name: neofetch
 #     state: present
 
-- name: Install Shell Packages
+- name: Install Pacman Base Packages
+  package:
+    name: "{{ base_pacman_packages }}"
+    state: present
+
+- name: Install Yay Base Packages
   package:
     name: "{{ base_pacman_packages }}"
     state: present
