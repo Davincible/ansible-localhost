@@ -1,7 +1,6 @@
 ---
 
 pacman_packages:
-  - f1viewer
   - chromium
   - signal
   - zathura  # Document Viewer
@@ -15,6 +14,7 @@ pacman_packages:
   - home-assistant
 
 yay_packages:
+  - f1viewer
   - postman-bin
   - tableplus
   - slack-desktop
