@@ -2,7 +2,7 @@
 
 pacman_packages:
   - chromium
-  - signal
+  - signal-desktop
   - zathura  # Document Viewer
   - cherrytree
   - telegram-desktop
