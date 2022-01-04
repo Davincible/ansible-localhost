@@ -1,0 +1,16 @@
+---
+
+- import_tasks: install.yml
+  become_method: sudo
+  become: true
+  become_user: root
+
+- import_tasks: aur.yml
+  become: false
+
+- import_tasks: pip.yml
+  become: false
+
+#   vars:
+#     ansible_password: "{{ primary_passwd }}"
+#     ansible_become_password: "{{ primary_passwd }}"

@@ -1,0 +1,6 @@
+---
+
+- name: Install Pacman Desktop Packages
+  package:
+    name: "{{ pacman_packages }}"
+    state: present

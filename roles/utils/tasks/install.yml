@@ -1,0 +1,6 @@
+---
+
+- name: Install Pacman Utilities Packages
+  package:
+    name: "{{ pacman_packages }}"
+    state: present

@@ -1,0 +1,58 @@
+---
+
+pacman_packages:
+  - go
+  - go-tools
+  - lua
+  - git
+  - python
+  - python-pip
+  - python-setuptools
+  - python-systemd
+  - docker
+  - docker-compose
+  - ansible
+  - ansible-core
+  - ansible-lint
+  - dbeaver
+  - filezilla
+  - ipython
+  - jupyter-notebook
+  - android-tools
+  - gdb
+  - git-sizer
+  - texlive-core
+  - texlive-bin
+  - texlive-latexextra
+  - sqlite
+
+yay_packages:
+  - neovim-git
+  - nvim-packer-git
+  - grpcui
+
+pacman_fonts:
+  - ttf-dejavu
+  - ttf-droid
+  - ttf-font-awesome
+  - ttf-hack
+  - ttf-inconsolata
+  - ttf-indic-otf
+  - ttf-liberation
+  - ttf-material-design-icons-webfont
+  - ttf-nerd-fonts-symbols
+  - ttf-opensans
+
+yay_fonts:
+  - ttf-ms-fonts
+
+pip_packages:
+  - numpy
+  - pandas
+  - pywal
+  - wpgtk
+  - networkx
+  - nltk
+  - lxml
+  - bs4
+  - selenium

@@ -1,0 +1,14 @@
+---
+
+pacman_packages:
+  - i3-gaps
+  - dunst
+  - dunstify
+  - dunst-notrify-speech
+  - polybar
+  - picom
+  - rofi
+  - rofi-calc
+
+yay_packages:
+  - rofi-autorandr

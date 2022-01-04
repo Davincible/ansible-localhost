@@ -1,0 +1,37 @@
+---
+
+pacman_packages:
+  - baobab  # (Disk Usage Analyzer)
+  - fd
+  - nvtop   # (htop like monitoring for Nvidia GPUs)
+  - tmux
+  - kitty
+  - jq
+  - hq
+  - yq
+  - tree
+  - lsd
+  - redshift
+  - fzf
+  - flameshot
+  - gparted
+  - kdeconnect
+  - ranger
+  - solaar
+  - arandr
+  - btrfs-progs
+  - nvtop
+  - gtop
+  - ncdu    # (disk usage analyzer cli)
+  - neofetch
+  - rsync
+  - snapper
+  - spotifyd
+  - youtube-dl
+
+yay_packages:
+  - xxd-standalone
+  - insync
+  - piavpn-bin
+  - spotify-tui
+  - tuxi-git

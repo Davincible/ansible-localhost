@@ -1,0 +1,20 @@
+---
+
+pacman_packages:
+  - f1viewer
+  - chromium
+  - signal
+  - zathura  # Document Viewer
+  - cherrytree
+  - telegram-desktop
+  - vlc
+  - discord
+  - obs-studio
+  - feh      # Image Viewer
+  - gephi    # Graph viewer
+  - home-assistant
+
+yay_packages:
+  - postman-bin
+  - tableplus
+  - slack-desktop

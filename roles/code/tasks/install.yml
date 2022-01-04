@@ -1,0 +1,20 @@
+---
+
+- name: Install Pacman Code Packages
+  package:
+    name: "{{ pacman_packages }}"
+    state: present
+
+- name: Install Pacman Fonts
+  package:
+    name: "{{ pacman_fonts }}"
+    state: present
+
+- name: Download get-pip.py script
+  get_url:
+    url: "https://bootstrap.pypa.io/get-pip.py"
+    dest: "/tmp/get-pip.py"
+
+- name: Install Pip from get-pip.py script
+  script:
+    cmd: "/tmp/get-pip.py"

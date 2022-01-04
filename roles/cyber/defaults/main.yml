@@ -1,0 +1,17 @@
+---
+
+pacman_packages:
+  - hashcat
+  - hashcat-utils
+  - wireshark-qt
+  - wireshark-cli
+  - aircrack-ng
+  - ghidra
+  - john
+  - radare
+  - r2ghidra
+  - binwalk
+
+yay_packages:
+  - steghide
+  - stegseek
