@@ -4,7 +4,7 @@ pacman_packages:
   - i3-gaps
   - dunst
   - dunstify
-  - dunst-notrify-speech
+  - dunst-notify-speech
   - polybar
   - picom
   - rofi

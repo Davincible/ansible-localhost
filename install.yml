@@ -34,12 +34,12 @@
   tags:
     - code
 
-- name: Install Code Packages
+- name: Install Cyber Packages
   hosts: manjaro
   roles:
-    - code
+    - cyber
   tags:
-    - code
+    - cyber
 
 - name: Install Desktop Packages
   hosts: manjaro
