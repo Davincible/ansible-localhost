@@ -12,9 +12,45 @@
         mode: 0600
         validate: 'visudo -cf %s'
 
-- name: Install base config
+- name: Install Base Packages
   hosts: manjaro
   roles:
     - base
   tags:
-    - shell_config
+    - base
+
+- name: Install Utility Packages
+  hosts: manjaro
+  roles:
+    - utils
+  tags:
+    - utils
+    - utilities
+
+- name: Install Code Packages
+  hosts: manjaro
+  roles:
+    - code
+  tags:
+    - code
+
+- name: Install Code Packages
+  hosts: manjaro
+  roles:
+    - code
+  tags:
+    - code
+
+- name: Install Desktop Packages
+  hosts: manjaro
+  roles:
+    - desktop
+  tags:
+    - desktop
+
+- name: Install User Program Packages
+  hosts: manjaro
+  roles:
+    - user-programs
+  tags:
+    - user-programs
