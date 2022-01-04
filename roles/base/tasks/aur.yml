@@ -2,5 +2,6 @@
 
 - name: Install AUR Base Packages
   aur:
-    name: "{{ base_pacman_packages }}"
+    name: "{{ base_yay_packages }}"
+    use: yay
     state: present
