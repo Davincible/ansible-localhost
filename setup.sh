@@ -5,7 +5,7 @@ if (( $EUID != 0 )); then
 fi
 
 pacman -Syu
-pacman -S ansible ansible-core ansible-lint
-pacman -S yay base-devel
-yay -Syu ansible-aur
+pacman -S --needed ansible ansible-core ansible-lint
+pacman -S --needed yay base-devel
+yay -S --norebuild --nocleanmenu --nodiffmenu ansible-aur
 ansible-galaxy collection install community.general
