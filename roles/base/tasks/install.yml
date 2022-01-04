@@ -2,10 +2,5 @@
 
 - name: Install Pacman Base Packages
   package:
-    name: "{{ base_pacman_packages }}"
-    state: present
-
-- name: Install AUR Base Packages
-  aur:
-    name: "{{ base_pacman_packages }}"
+    name: "{{ pacman_packages }}"
     state: present

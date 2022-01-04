@@ -2,6 +2,6 @@
 
 - name: Install AUR Base Packages
   aur:
-    name: "{{ base_yay_packages }}"
+    name: "{{ yay_packages }}"
     use: yay
     state: present

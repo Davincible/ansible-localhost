@@ -1,6 +1,6 @@
 ---
 
-base_pacman_packages:
+pacman_packages:
   - yay
   - base-devel
   - zsh
@@ -23,7 +23,7 @@ base_pacman_packages:
   - sshpass
   - net-tools
 
-base_yay_packages:
+yay_packages:
   - oh-my-zsh-git
   - zsh-vi-mode
   - nerd-fonts-roboto-mono
