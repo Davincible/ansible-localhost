@@ -1,0 +1,6 @@
+---
+
+- name: Install AUR Base Packages
+  aur:
+    name: "{{ base_pacman_packages }}"
+    state: present

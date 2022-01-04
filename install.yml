@@ -1,5 +1,17 @@
 ---
 
+- name: Allow the current user to run `sudo pacman` without a password
+  hosts: manjaro
+  become: true
+  tasks:
+    - name: Assure correct sudoers file
+      ansible.builtin.lineinfile:
+        path: "/etc/sudoers.d/11-install-{{ lookup('env','USER') }}"
+        line: "{{ lookup('env','USER') }} ALL=(ALL) NOPASSWD: /usr/bin/pacman"
+        create: true
+        mode: 0600
+        validate: 'visudo -cf %s'
+
 - name: Install base config
   hosts: manjaro
   roles:

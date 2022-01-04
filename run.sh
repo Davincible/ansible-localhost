@@ -1,2 +1,2 @@
 #!/bin/bash
-ansible-playbook -i inventory.cfg install.yml --ask-become-pass
+ansible-playbook -i ansible.cfg install.yml --ask-become-pass

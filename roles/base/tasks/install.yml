@@ -1,16 +1,11 @@
 ---
 
-# - name: Install Base Packages
-#   community.general.pacman:
-#     name: neofetch
-#     state: present
-
 - name: Install Pacman Base Packages
   package:
     name: "{{ base_pacman_packages }}"
     state: present
 
-- name: Install Yay Base Packages
-  package:
+- name: Install AUR Base Packages
+  aur:
     name: "{{ base_pacman_packages }}"
     state: present
