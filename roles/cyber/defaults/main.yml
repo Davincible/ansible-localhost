@@ -8,7 +8,7 @@ pacman_packages:
   - aircrack-ng
   - ghidra
   - john
-  - radare
+  - radare2
   - r2ghidra
   - binwalk
 
