@@ -4,7 +4,7 @@
   file:
     path: "{{ scripts_dir }}"
     state: directory
-    mode: 0777
+    mode: 0755
 
 - name: Clone git directory
   git:
