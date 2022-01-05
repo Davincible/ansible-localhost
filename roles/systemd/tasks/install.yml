@@ -18,8 +18,9 @@
   failed_when: false
 
 - name: Bootctl check failed
-  debug:
-    msg: "{{ systemd_installed.stderr }}"
+  fail:
+    msg: "Bootctl output: {{ systemd_installed.stderr }}"
+  failed_when: false
   when: systemd_installed.rc != 0
 
 - include_tasks: install_systemd.yml
