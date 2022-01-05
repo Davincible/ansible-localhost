@@ -25,9 +25,11 @@
 - include_tasks: install_systemd.yml
   when:
     - pacman_found.stat.exists
+    - systemd_installed.rc == 0
     - systemd_installed.stdout != "yes"
 
 - include_tasks: install_scripts.yml
   when:
     - pacman_found.stat.exists
+    - systemd_installed.rc == 0
     - systemd_installed.stdout != "yes"
