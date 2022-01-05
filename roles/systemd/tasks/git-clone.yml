@@ -9,5 +9,5 @@
 - name: Clone git directory
   git:
     repo: https://github.com/Davincible/Manjaro-SystemdBoot-Integration
-    dst: "{{ git_dir }}"
+    dest: "{{ git_dir }}"
     version: master
