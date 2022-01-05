@@ -1,0 +1,61 @@
+---
+
+- name: Install install hook
+  copy:
+    src: "{{ git_dir }}/{{ install_hook }}"
+    dst: "{{ install_hook_dest }}"
+    mode: 0644
+
+- name: Install install script
+  copy:
+    src: "{{ git_dir }}/{{ install_script }}"
+    dst: "{{ install_script_dest }}"
+    mode: 0755
+
+- name: Install remove hook
+  copy:
+    src: "{{ git_dir }}/{{ remove_hook }}"
+    dst: "{{ remove_hook_dest }}"
+    mode: 0644
+
+- name: Install remove script
+  copy:
+    src: "{{ git_dir }}/{{ remove_script }}"
+    dst: "{{ remove_script_dest }}"
+    mode: 0755
+
+- name: Install ucode hook
+  copy:
+    src: "{{ git_dir }}/{{ ucode_hook }}"
+    dst: "{{ ucode_hook_dest }}"
+    mode: 0644
+
+- name: Install ucode script
+  copy:
+    src: "{{ git_dir }}/{{ ucode_script }}"
+    dst: "{{ ucode_script_dest }}"
+    mode: 0755
+
+- name: Install preset
+  copy:
+    src: "{{ git_dir }}/{{ preset }}"
+    dst: "{{ preset_dest }}"
+    mode: 0644
+
+- name: Check if EFI in presets
+  command:
+    cmd: 'grep -rq EFI /etc/mkinitcpio.d'
+  register: efi_check
+  changed_when: false
+  ignore_errors: true
+
+- name: Remove presets
+  file:
+    path: "{{ lookup('fileglob', '/etc/mkinitcpio.d/*.preset') }}"
+    state: absent
+  when: efi_check.failed
+
+- name: Reinstall kernel headers
+  command:
+    cmd: 'pacman -Syu --noconfirm $(pacman -Qq | grep -E "^linux[0-9]{1,3}")'
+  when: efi_check.failed

@@ -1,0 +1,27 @@
+---
+
+- name: Install Pacman Systemd Packages
+  package:
+    name: "{{ pacman_packages }}"
+    state: present
+
+- name: Check if pacman config directory exists
+  stat:
+    path: "{{ pacman_configd }}"
+  register: pacman_found
+
+- name: Check if systemd insalled
+  command:
+    cmd: "bootctl is-installed"
+  register: systemd_installed
+  when: pacman_found.stat.exists
+
+- include_tasks: install_systemd.yml
+  when:
+    - pacman_found.stat.exists
+    - systemd_installed.stdout != "yes"
+
+- include_tasks: install_scripts.yml
+  when:
+    - pacman_found.stat.exists
+    - systemd_installed.stdout != "yes"

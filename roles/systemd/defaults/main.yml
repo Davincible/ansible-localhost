@@ -1,0 +1,38 @@
+---
+
+pacman_packages:
+  - systemd
+  - python-systemd
+  - systemd-libs
+  - systemd-fsck-silent
+
+scripts_dir: "~/Scripts"
+git_dir: "{{ scripts_dir }}/manjaro-systemd"
+
+pacman_configd: "/etc/pacman.d"
+hooks_dir: "{{ pacman_configd }}/hooks"
+pacman_scripts_dir: "{{ pacman_configd }}/scripts"
+
+# Sources
+install_hook: "90-mkinitcpio-install.hook"
+install_script: "mkinitcpio-install"
+remove_hook: "60-mkinitcpio-remove.hook"
+remove_script: "mkinitcpio-remove"
+preset: "hook.preset"
+ucode_hook: "ucode-copy.hook"
+ucode_scipt: "ucode-copy"
+sdboot_manage: "sdboot-manage"
+
+# Destinations
+install_hook_dest: "{{ hooks_dir }}/{{ install_hook }}"
+install_script_dest: "{{ pacman_scripts_dir }}/{{ install_script }}"
+remove_hook_dest: "{{ hooks_dir }}/{{ remove_hook }}"
+remove_script_dest: "{{ pacman_scripts_dir }}/{{ remove_script }}"
+preset_dest: "/usr/share/mkinitcpio/{{ preset }}"
+ucode_hook_dest: "{{ hooks_dir }}/{{ ucode_hook }}"
+ucode_script_dest: "{{ scripts_dir }}/{{ ucode_scipt }}"
+
+grub_packages:
+  - grub
+  - grub-btrfs
+  - grub-theme-manjaro

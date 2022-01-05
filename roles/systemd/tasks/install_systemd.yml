@@ -1,0 +1,19 @@
+---
+
+- name: Install systemd-boot
+  command:
+    cmd: "bootctl install"
+  when: systemd_installed.stdout != "yes"
+  register: bootctl_install
+
+- name: Remove grub packages
+  package:
+    name: "{{ grub_packages }}"
+    state: absent
+  when: bootctl_install.rc == 0
+
+- name: Remove grub folder
+  file:
+    path: "/boot/grub"
+    state: absent
+  when: bootctl_install.rc == 0

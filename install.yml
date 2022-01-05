@@ -54,3 +54,10 @@
     - user-programs
   tags:
     - user-programs
+
+- name: Install Systemd-Boot
+  hosts: manjaro
+  roles:
+    - systemd
+  tags:
+    - systemd
