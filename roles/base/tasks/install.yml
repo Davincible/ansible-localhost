@@ -4,3 +4,8 @@
   package:
     name: "{{ pacman_packages }}"
     state: present
+
+- name: Prevent account lockouts
+  lineinfile:
+    line: "deny = 0"
+    path: "/etc/security/faillock.conf"
