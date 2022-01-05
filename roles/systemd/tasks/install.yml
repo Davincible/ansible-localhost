@@ -15,6 +15,12 @@
     cmd: "bootctl is-installed"
   register: systemd_installed
   when: pacman_found.stat.exists
+  failed_when: false
+
+- name: Bootctl check failed
+  debug:
+    msg: systemd_installed.stderr
+  when: systemd_installed.rc != 0
 
 - include_tasks: install_systemd.yml
   when:
