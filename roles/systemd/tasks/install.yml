@@ -19,7 +19,7 @@
 
 - name: Bootctl check failed
   debug:
-    msg: systemd_installed.stderr
+    msg: "{{ systemd_installed.stderr }}"
   when: systemd_installed.rc != 0
 
 - include_tasks: install_systemd.yml
