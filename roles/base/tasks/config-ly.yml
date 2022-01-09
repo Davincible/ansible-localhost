@@ -1,0 +1,17 @@
+---
+
+- name: Copy ly config file over
+  copy:
+    src: ly-config.ini
+    dest: /etc/ly/config.ini
+    mode: 0755
+
+- name: Disable current display manager
+  systemd:
+    name: display-manager
+    enabled: false
+
+- name: Enable ly display manager
+  systemd:
+    name: ly
+    enabled: true
