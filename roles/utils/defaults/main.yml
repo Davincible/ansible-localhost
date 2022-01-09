@@ -11,6 +11,19 @@ pacman_packages:
   - yq
   - tree
   - lsd
+  - bat    # cat alternative
+  - procs  # ps alternative
+  - sd     # sed alternative
+  - dust   # du alternative
+  - ripgrep  # grep alternative
+  - tokei  # show statistics about code
+  - hyperfine  # CLI benchmarking tool
+  - tealdeer  # tldr alternative
+  - bandwhich  # show network bandwith statistics
+  - grex   # generate regex expressions from input
+  - git-delta  # diff viewer
+  - bat  # cat alternative
+  - ripgrep-all
   - redshift
   - fzf
   - flameshot
@@ -35,3 +48,5 @@ yay_packages:
   - piavpn-bin
   - spotify-tui
   - tuxi-git
+  - ytop-bin  # another top alternative
+  - rmesg-git

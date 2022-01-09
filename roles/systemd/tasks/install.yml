@@ -17,22 +17,23 @@
   when: pacman_found.stat.exists
   failed_when: false
 
-- name: Bootctl check failed
-  fail:
-    msg: "Bootctl output: {{ systemd_installed.stderr }}"
-  ignore_errors: true
-  when: systemd_installed.rc != 0
+    # - name: Bootctl check failed
+    #   fail:
+    #     msg: "Bootctl output: {{ systemd_installed.stderr }}"
+    #   ignore_errors: true
+    #   when: systemd_installed.rc != 0
 
 - name: Run Install Systemd
   include_tasks: install_systemd.yml
-  when:
-    - pacman_found.stat.exists
-    - systemd_installed.rc == 0
-    - systemd_installed.stdout != "yes"
+  ignore_errors: true
+    #  when:
+    #    - pacman_found.stat.exists
+    #    - systemd_installed.rc == 0
+    #    - systemd_installed.stdout != "yes"
 
 - name: Run Install Scripts
   include_tasks: install_scripts.yml
-  when:
-    - pacman_found.stat.exists
-    - systemd_installed.rc == 0
-    - systemd_installed.stdout != "yes"
+    #   when:
+    #     - pacman_found.stat.exists
+    #     - systemd_installed.rc == 0
+    #     - systemd_installed.stdout != "yes"
