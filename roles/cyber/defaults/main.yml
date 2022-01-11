@@ -11,6 +11,7 @@ pacman_packages:
   - radare2
   - r2ghidra
   - binwalk
+  - nmap
 
 yay_packages:
   - steghide
