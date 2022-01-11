@@ -5,3 +5,9 @@
     name: "{{ yay_packages }}"
     use: yay
     state: present
+
+- name: Cargo install caffeine
+  command:
+    cmd: "cargo install --git https://github.com/rschmukler/caffeinate"
+  register: cargo_output
+  changed_when: cargo_output.rc == 0

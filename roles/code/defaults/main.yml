@@ -25,6 +25,7 @@ pacman_packages:
   - texlive-bin
   - texlive-latexextra
   - sqlite
+  - npm
 
 yay_packages:
   - neovim-git

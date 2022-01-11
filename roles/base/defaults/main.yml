@@ -23,6 +23,8 @@ pacman_packages:
   - sshpass
   - net-tools
   - keyutils
+  - light
+  - bluez-utils
 
 yay_packages:
   - oh-my-zsh-git
@@ -31,4 +33,6 @@ yay_packages:
   - nerd-fonts-noto-sans-mono
   - nerd-fonts-source-code-pro
   - noto-fonts
+  - xidlehook
+  - systemd-boot-pacman-hook
   - ly

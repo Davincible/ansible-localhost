@@ -9,6 +9,9 @@ pacman_packages:
   - picom
   - rofi
   - rofi-calc
+  - xautolock
+  - i3exit
+  - i3lock
 
 yay_packages:
   - rofi-autorandr

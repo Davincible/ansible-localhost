@@ -49,4 +49,4 @@ yay_packages:
   - spotify-tui
   - tuxi-git
   - ytop-bin  # another top alternative
-  - rmesg-git
+    # - rmesg-git
