@@ -6,7 +6,6 @@ pacman_packages:
   - dunstify
   - dunst-notify-speech
   - polybar
-  - picom
   - rofi
   - rofi-calc
   - xautolock
@@ -15,3 +14,4 @@ pacman_packages:
 
 yay_packages:
   - rofi-autorandr
+  - picom-ibhagwan-git

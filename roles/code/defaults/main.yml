@@ -31,6 +31,7 @@ yay_packages:
   - neovim-git
   - nvim-packer-git
   - grpcui
+  - pgcli
 
 pacman_fonts:
   - ttf-dejavu

@@ -25,6 +25,7 @@ pacman_packages:
   - keyutils
   - light
   - bluez-utils
+  - jdk11-openjdk
 
 yay_packages:
   - oh-my-zsh-git
