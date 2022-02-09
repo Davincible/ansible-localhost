@@ -32,6 +32,9 @@ yay_packages:
   - nvim-packer-git
   - grpcui
   - pgcli
+  - protoc-gen-doc-git
+  - protoc-gen-go
+  - protoc-gen-go-grpc
 
 pacman_fonts:
   - ttf-dejavu
@@ -58,3 +61,4 @@ pip_packages:
   - lxml
   - bs4
   - selenium
+  - pynvim
