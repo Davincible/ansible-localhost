@@ -32,7 +32,7 @@ yay_packages:
   - nvim-packer-git
   - grpcui
   - pgcli
-  - protoc-gen-doc-git
+    # - protoc-gen-doc-git  # error in build file for now
   - protoc-gen-go
   - protoc-gen-go-grpc
 
