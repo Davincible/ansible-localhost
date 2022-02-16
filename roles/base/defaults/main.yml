@@ -26,6 +26,7 @@ pacman_packages:
   - light
   - bluez-utils
   - jdk11-openjdk
+  - libvdpau-va-gl
 
 yay_packages:
   - oh-my-zsh-git
