@@ -38,3 +38,4 @@ yay_packages:
   - xidlehook
   - systemd-boot-pacman-hook
   - ly
+  - ttf-apple-emoji

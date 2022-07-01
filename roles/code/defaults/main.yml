@@ -26,6 +26,14 @@ pacman_packages:
   - texlive-latexextra
   - sqlite
   - npm
+  - ffmpegthumbnailer
+  - kubectl
+  - buildkit
+  - rootlesskit
+  - typescript
+  - helm
+  - stern
+  - kustomize
 
 yay_packages:
   - neovim-git
@@ -35,6 +43,12 @@ yay_packages:
     # - protoc-gen-doc-git  # error in build file for now
   - protoc-gen-go
   - protoc-gen-go-grpc
+  - poppler
+  - fontpreview-git
+  - fontpreview-ueberzug-git
+  - tmuxinator
+  - tilt-bin
+  - nerdctl-full-bin
 
 pacman_fonts:
   - ttf-dejavu
@@ -62,3 +76,4 @@ pip_packages:
   - bs4
   - selenium
   - pynvim
+  - ueberzug

@@ -41,6 +41,10 @@ pacman_packages:
   - snapper
   - spotifyd
   - youtube-dl
+  - stern  # Kubernetes log viewer
+  - github-cli
+  - hubble-bin  # hubble celium
+  - cilium-cli-bin
 
 yay_packages:
   - xxd-standalone
