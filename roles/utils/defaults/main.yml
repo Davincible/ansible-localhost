@@ -44,7 +44,8 @@ pacman_packages:
   - stern  # Kubernetes log viewer
   - github-cli
   - hubble-bin  # hubble celium
-  - cilium-cli-bin
+  - gdu -- Go Disk Usage, fast
+  - bottom -- graphical top
 
 yay_packages:
   - xxd-standalone

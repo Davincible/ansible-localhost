@@ -27,6 +27,8 @@ pacman_packages:
   - bluez-utils
   - jdk11-openjdk
   - libvdpau-va-gl
+  - xsecurelock
+  - xss-lock
 
 yay_packages:
   - oh-my-zsh-git
